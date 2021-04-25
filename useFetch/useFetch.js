@@ -15,8 +15,6 @@ export const useFetch = (url) => {
     },[]);
 
     useEffect (()=>{
-
-        //Actualizar el estado para que aparezca el loading c/vez que carga la nueva frase
         setState({ data:null, loading:true, error:null });
         fetch (url)
             .then (resp => resp.json())

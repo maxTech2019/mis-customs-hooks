@@ -18,7 +18,6 @@ export const useFormulario = (estadoInicial = {}) => {
         });
     }
 
-    //retorna en hooks los values y la función handleOnChange
     return [values, handleOnChange, reset];
 
 }
